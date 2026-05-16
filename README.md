@@ -58,7 +58,7 @@ The pipeline is organized as a single `train_pipeline.py` script with six modes 
 
 ```bash
 # Clone the repository
-git clone https://github.com/<Haroon-M-Bilal>/dl-bilstm-ids.git
+git clone https://github.com/Haroon-M-Bilal/dl-bilstm-ids.git
 cd dl-bilstm-ids
 
 # Create a virtual environment
@@ -202,11 +202,11 @@ If you use this repository in your research, please cite:
 
 ```bibtex
 @misc{dlbilstmids2026,
-  author       = {<Haroon Muhammad Bilal>},
+  author       = {Haroon Muhammad Bilal},
   title        = {{DL-BiLSTM-IDS}: Robust and Privacy-Preserving IoT Intrusion Detection},
   year         = {2026},
   publisher    = {GitHub},
-  howpublished = {\url{https://github.com/<Haroon-M-Bilal>/dl-bilstm-ids}}
+  howpublished = {\url{https://github.com/Haroon-M-Bilal/dl-bilstm-ids}}
 }
 ```
 
@@ -216,7 +216,7 @@ This work extends:
 @article{wang2023dlbilstm,
   title   = {A Lightweight {IoT} Intrusion Detection Model Based on {DL-BiLSTM}},
   author  = {Wang and others},
-  journal = {<venue>},
+  journal = {arXiv preprint},
   year    = {2023}
 }
 ```
