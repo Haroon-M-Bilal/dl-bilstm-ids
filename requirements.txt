@@ -1,0 +1,52 @@
+# ============================================================
+# requirements.txt
+# DL-BiLSTM IoT Intrusion Detection - Extended Research Project
+# Covers: SMOTE, Adversarial Robustness, Federated Learning
+# ============================================================
+
+# ── Core ML Framework ────────────────────────────────────────
+torch==2.1.0+cu121          # PyTorch with CUDA 12.1 for RTX 4080
+torchvision==0.16.0+cu121
+torchaudio==0.16.0+cu121
+
+# ── Data Processing ──────────────────────────────────────────
+numpy==1.24.4
+pandas==2.0.3
+scikit-learn==1.3.2         # IPCA, train/test split, metrics
+imbalanced-learn==0.11.0    # SMOTE for class imbalance (GAP 1)
+
+# ── Adversarial Robustness ───────────────────────────────────
+adversarial-robustness-toolbox==1.16.0  # ART for adversarial attacks (GAP 2)
+
+# ── Hyperparameter Optimization ──────────────────────────────
+optuna==3.4.0               # Same as original paper
+
+# ── Federated Learning Simulation ────────────────────────────
+flwr==1.6.0                 # Flower framework for FL simulation (GAP 3)
+
+# ── Visualization & Reporting ────────────────────────────────
+matplotlib==3.7.3
+seaborn==0.13.0
+tqdm==4.66.1                # Progress bars during training
+
+# ── Utilities ────────────────────────────────────────────────
+scipy==1.11.4
+joblib==1.3.2
+colorama==0.4.6             # Colored terminal output
+
+# ============================================================
+# INSTALLATION INSTRUCTIONS:
+#
+# Step 1 — Install PyTorch with CUDA first (must be separate):
+#   pip install torch==2.1.0+cu121 torchvision==0.16.0+cu121 torchaudio==0.16.0+cu121 --index-url https://download.pytorch.org/whl/cu121
+#
+# Step 2 — Install everything else:
+#   pip install -r requirements.txt --ignore-requires-python
+#
+# Step 3 — Verify GPU is detected:
+#   python -c "import torch; print(torch.cuda.is_available()); print(torch.cuda.get_device_name(0))"
+#   Expected output: True / NVIDIA GeForce RTX 4080
+#
+# NOTE: If you get CUDA errors, make sure your NVIDIA driver
+#       is version 525+ (check with: nvidia-smi)
+# ============================================================

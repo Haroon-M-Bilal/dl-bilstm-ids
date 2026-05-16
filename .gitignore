@@ -1,0 +1,52 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+
+# ---------- Virtual envs ----------
+venv/
+env/
+ENV/
+.venv/
+
+# ---------- IDE / OS ----------
+.vscode/
+.idea/
+.ipynb_checkpoints/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ---------- ML / project-specific ----------
+# Datasets (not redistributed; download from CIC)
+data/
+datasets/
+*.csv
+
+# Keep committed result JSONs but ignore intermediate per-run results
+results_*/intermediate/
+results_*/*.tmp
+# (results_*/results.json is intentionally kept under version control)
+
+# Model checkpoints
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+
+# Logs
+logs/
+runs/
+wandb/
+
+# Build artifacts
+*.exe
+*.zip
+
+# Environment
+.env
